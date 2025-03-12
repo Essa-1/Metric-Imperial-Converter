@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metric/Imperial Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Metric/Imperial Converter</h1>
+    <hr />
+
+    <h3>Example usage</h3>
+    <p>
+      /api/convert?input=4gal<br />
+      /api/convert?input=1/2km<br />
+      /api/convert?input=5.4/3lbs<br />
+      /api/convert?input=kg
+    </p>
+
+    <h3>Example return</h3>
+    <p>
+{ initNum: 3.1, initUnit: 'mi', returnNum: 4.98895, returnUnit: 'km', string: '3.1 miles converts to 4.98895 kilometers' }
+    </p>
+
+    <hr />
+
+    <h3>Front-End</h3>
+    <input type="text" id="inputValue" placeholder="3.1mi" />
+    <button onclick="convert()">Convert!</button>
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
